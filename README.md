@@ -9,8 +9,8 @@
 <br>
 
 <div align="center">
-  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/joshuapare/moodle-api-gen?include_prereleases&style=flat-square&color=f98012">
-  <img alt="GitHub License" src="https://img.shields.io/github/license/joshuapare/moodle-api-gen?style=flat-square">
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/moodle-api-gen?include_prereleases&style=flat-square&color=f98012">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/moodle-api-gen?style=flat-square">
   <img alt="Built with Go" src="https://img.shields.io/badge/built_with-Go-007D9C.svg?style=flat-square">
 </div>
 
@@ -21,24 +21,21 @@
 </p>
  
 
-NestJS Client for Moodle, generated from the relevant OpenAPI spec from the [moodle-api-gen](https://www.github.com/joshuapare/moodle-api-gen) project.
+NestJS Client for Moodle, generated from the relevant OpenAPI spec from the [moodle-api-gen](https://www.github.com/moodle-api-gen) project.
 
-### Building
+### Installation
 
-To install the required dependencies and to build the typescript sources run:
 ```
-npm install
-npm run build
+npm install moodle-client-nestjs
 ```
 
 #### General usage
 
 In your Nestjs project:
 
-
 ```
 // without configuring providers
-import { ApiModule } from 'joshuapare/moodle-client-nestjs';
+import { ApiModule } from 'moodle-client-nestjs';
 import { HttpModule } from '@nestjs/axios';
 
 @Module({
@@ -53,7 +50,7 @@ export class AppModule {}
 
 ```
 // configuring providers
-import { ApiModule, Configuration, ConfigurationParameters } from 'joshuapare/moodle-client-nestjs';
+import { ApiModule, Configuration, ConfigurationParameters } from 'moodle-client-nestjs';
 
 export function apiConfigFactory (): Configuration => {
   const params: ConfigurationParameters = {
@@ -72,7 +69,7 @@ export class AppModule {}
 ```
 
 ```
-import { DefaultApi } from 'joshuapare/moodle-client-nestjs';
+import { DefaultApi } from 'moodle-client-nestjs';
 
 export class AppComponent {
     constructor(private apiGateway: DefaultApi) { }
@@ -108,7 +105,7 @@ export class AppModule {
 If different than the generated base path, during app bootstrap, you can provide the base path to your service.
 
 ```
-import { BASE_PATH } from 'joshuapare/moodle-client-nestjs';
+import { BASE_PATH } from 'moodle-client-nestjs';
 
 bootstrap(AppComponent, [
     { provide: BASE_PATH, useValue: 'https://your-web-service.com' },
@@ -117,7 +114,7 @@ bootstrap(AppComponent, [
 or
 
 ```
-import { BASE_PATH } from 'joshuapare/moodle-client-nestjs';
+import { BASE_PATH } from 'moodle-client-nestjs';
 
 @Module({
     imports: [],
@@ -166,7 +163,7 @@ export const environment = {
 
 In the src/app/app.module.ts:
 ```
-import { BASE_PATH } from 'joshuapare/moodle-client-nestjs';
+import { BASE_PATH } from 'moodle-client-nestjs';
 import { environment } from '../environments/environment';
 
 @Module({

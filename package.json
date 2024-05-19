@@ -1,5 +1,5 @@
 {
-  "name": "@joshuapare/moodle-client-nestjs",
+  "name": "moodle-client-nestjs",
   "version": "4.3.4",
   "description": "Moodle Webservices client, generated as part of the `moodle-api-gen` project",
   "author": "Joshua Pare <joshuabpare@gmail.com>",
