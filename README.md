@@ -9,8 +9,8 @@
 <br>
 
 <div align="center">
-  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/moodle-api-gen?include_prereleases&style=flat-square&color=f98012">
-  <img alt="GitHub License" src="https://img.shields.io/github/license/moodle-api-gen?style=flat-square">
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/joshuapare/moodle-api-gen?include_prereleases&style=flat-square&color=f98012">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/joshuapare/moodle-api-gen?style=flat-square">
   <img alt="Built with Go" src="https://img.shields.io/badge/built_with-Go-007D9C.svg?style=flat-square">
 </div>
 
